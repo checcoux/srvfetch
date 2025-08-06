@@ -22,6 +22,6 @@ Minimal “neofetch”-style splash for your web server.
 
 ## Customize
 
-- Edit ASCII blocks in `splash_data.php`
+- Edit ASCII blocks in `splash_data.php`, right now it comes ready for Apache, Nginx and Lighttpd
 - Add/remove entries in the `$info` array
 - Tweak styles in `splash_view.php`  
