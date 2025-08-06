@@ -17,7 +17,7 @@ Minimal “neofetch”-style splash for your web server.
 
 ## Install
 
-1. Copy all three files to your vhost root
+1. Copy `index.php` and `srvfetch` directrory to your vhost root
 2. Ensure `index.php` is first in `DirectoryIndex`
 
 ## Customize
