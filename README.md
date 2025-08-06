@@ -20,6 +20,14 @@ Minimal “neofetch”-style splash for your web server.
 1. Copy `index.php` and `srvfetch` directrory to your vhost root
 2. Ensure `index.php` is first in `DirectoryIndex`
 
+
+You can also use this one-liner: 
+```
+wget -q https://github.com/checcoux/srvfetch/releases/download/v0.1/srvfetch.v0.1.zip -O /tmp/srvfetch.zip && \
+unzip -qo /tmp/srvfetch.zip -d /tmp/srvfetch && \
+cp -r /tmp/srvfetch/* /var/www/html/  # substitute with your web root path
+```
+
 ## Customize
 
 - Edit ASCII blocks in `splash_data.php`, right now it comes ready for Apache, Nginx and Lighttpd
