@@ -1,3 +1,9 @@
+<?php
+if (basename(__FILE__) === basename($_SERVER['SCRIPT_FILENAME'])) {
+    http_response_code(403);
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +26,7 @@
     <pre class="ascii"><?= $logo ?></pre>
     <div class="info">
         <?php foreach($info as $k => $v): ?>
-            <div><span class="key"><?= $k ?>:</span><span class="value"><?= $v ?></span></div>
+            <div><span class="key"><?= $k ?>:</span><span class="value"><?= htmlspecialchars($v, ENT_QUOTES|ENT_SUBSTITUTE, 'UTF-8') ?></span></div>
         <?php endforeach; ?>
     </div>
     <div class="credit">
